@@ -542,6 +542,7 @@ section.spacer blockquote cite {
 }
 #filters ul li a {
 	display: block;
+	/*hellb*/
 	float: left;
 	padding: 2px 5px;
 	color: inherit;
