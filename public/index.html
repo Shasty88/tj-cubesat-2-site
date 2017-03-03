@@ -12,305 +12,515 @@
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
+  See the License for the specific language governing pers and
   limitations under the License
 -->
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A website explaining the TJ Reverb project - the second cubesat designed and built by students at TJHSST">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+    <title>TJ REVERB</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    .mdl-demo {
-    	background: url('images/ISS007-E-10807.JPG');
-    	background-size: cover;
-    	}
-    </style>
+    <link rel="stylesheet" href="css/simpletextrotator.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    /*function easterEgg(){
+        document.location = "index.html#easter";
+        return false;
+      }*/
+    </script>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl- ">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--blue-grey-800">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+
+      <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">TJ REVERB<br><span style="font-size: 75%;"><i> R<span style="font-size:60%">ESEARCH AND </span>E<span style="font-size:60%">XPLORATION </span>V<span style="font-size:60%">EHICLE FOR THE </span>E<span style="font-size:60%">VALUATION OF </span>R<span style="font-size:60%">ADIO </span>B<span style="font-size:60%">ROADCASTING</i></span></span>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>TJ Reverb</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--blue-grey-900">
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">Features</a>
-          <a href="#features" class="mdl-layout__tab">Details</a>
-          <a href="#features" class="mdl-layout__tab">Technology</a>
-          <a href="originalwebsite.html" class="mdl-layout__tab">Original Mission</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--blue-grey-700" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
+          <a href="#mission_objectives" class="mdl-layout__tab">Mission Objectives</a>
+          <a href="#aboutus" class="mdl-layout__tab">About Us</a>
+
+
+
+          <!-- put faq back in when we need it
+          <a href="#faq" class="mdl-layout__tab">FAQ</a>
+          -->
+          <a href="tj3sat.html" class="mdl-layout__tab">TJ3Sat</a>
+          <!--removed the superscript because it created awkward allignment-->
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <!--here's the mission patch-->
+          <div class="centered_patch">
+            <img src="img/tjsat/TJ3Sat_Mission_Patch.png" alt="TJ3Sat Mission Patch, from 2013. Check back again later for a new, updated TJ REVERB Mission Patch!">
+          </div>
+
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Introduction</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-                <div class="section__text">
-                  <div class = "mdl-card__actions mdl-card--border">
-                  <h5>Project Goals</h5>
-                    <ol>
-                      <li>Lorem</li>
-                      <li>Ipsum</li>
-                    </ol>
+                <h4>Mission Statement</h4>
+                TJ REVERB is a satellite built by high school students at Thomas Jefferson High School for Science and Technology, with the primary purpose to compare multiple communication methods for the purpose of education and creating a best practices document for
+                TJ and others. Additionally, TJ REVERB will provide an educational vehicle to teach students the principles of systems engineering and have the students develop educational materials teaching concepts within science, technology, engineering
+                and math while using the TJ REVERB CubeSat as a subject model.
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>What is a Cubesat?</h4>
+                The concept started in 1999 when California Polytechnic Institute and Stanford University partnered to create the specifications for the CubeSat. It was determined that the one unit of a CubeSat equates to 10cm by 10cm by 11.35 cm in volume and usually no larger than 1.33 kilograms in mass. The initial purpose of the CubeSat program was to promote skills that were needed to send small satellites into Low Earth Orbit (LEO). Eventually, it developed to be a concept of much broader use, ranging from professional companies seeking them as modes of cheap experimentation to commercial use. Small satellites have become widely accepted as a large part of the future in space, and have found their place among much larger satellites as micro-technology has developed. 
+              </div>
+
+            </div>
+          </section>
+          <!-- no longer needed due to relocation
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Subsystems</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Orbit and Communication</h5>
+
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Programming</h5>
+                  The CubeSat flight computer will be programmed to collect data for the communication comparison experiment for at least 180 days. Any additional data gathered will add to the validity of the dataset and be helpful in designing educational activities.
+                  To accomplish these goals, the commitee utilize Goddard's Core Flight System, Goddard's 42 Software, and GNU Radio
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Proposal</h5>
+
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>CAD</h5>
+
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Electronics</h5>
+
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          </section>
+          -->
+          <!-- I think there is no need for this footer>
+          <section class="section--footer mdl-color--grey-400 mdl-grid">
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--blue-grey-800 section__circle--big"></div>
+            </div>
+            <div class="section__text antefooter mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Orbital Technology</h5>
+              Orbital provided funding for the purchase of satellite hardware, engineering consultation, and hardware/software testing facilities.
+            </div>
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--blue-grey-800 section__circle--big"></div>
+            </div>
+            <div class="section__text antefooter mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Stensat</h5>
+              Stensat provided contributions to the design and construction of the radio and power handling hardware. Assisted with the schematic design and layout of the circuit boards.
+            </div>
+          </section>
+          -->
+          <div class="spacer40"></div>
+          <div class="spacer40"></div>
+        </div>
+
+        <div class="mdl-layout__tab-panel" id="mission_objectives">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <h4>Mission Objectives</h4>
+                The satellite’s primary purpose is to compare multiple communication methods for the purpose of education and creating a best practices document for TJ and others.
+                <div class="section__text">
+                  <div class="mdl-card__actions mdl-card--border">
+                    <br>
+                    <h5>Project Objectives</h5>
+                    <ol class="bigOL">
+                      <li>Design CubeSat while staying within budget: Power, Volume, Mass, and Cost</li>
+                      <li>Assess Feasibility of CubeSat Design</li>
+                      <li>Assess Risk Factors</li>
+                      <li>Apply for and be selected as a NASA CSLI Candidate with the Education Focus Area</li>
+                      <ul class="bigUL">
+                        <li>Selected to recieve NASA's CSLI Grant (February 2017)</li>
+                      </ul>
+                      <li>Build, Launch, and Operate the 1U CubeSat in Orbit</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Education Objectives</h4>
+                Inherently, the CubeSat project is an educational endeavor for TJHSST students. Students do not regularly encounter such large scale and intensive group projects in a typical classroom, so the TJ REVERB provides students the opportunity to learn how to
+                function within subsystems and cooperate within a large team.
+                <ul class="bigUL">
+                  <li>Train students in engineering of a CubeSat</li>
+                  <li>Develop and document the processes required</li>
+                  <li>Engage in STEM Outreach to the public and local students</li>
+                  <li>Operate the 1U CubeSat in orbit</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Subsystem Objectives</h4>
+                TJ students who are directly involved with the design and implementation of the satellite will learn how to function in smaller groups with specific tasks known as subsystems. Together these teams will cooperate inside and outside the classroom setting
+                for TJ REVERB.
+                <div class="section__text">
+
+                  <br>
+                  <h5><span style=font-size:18px>Subsystems</span></h5>
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>Orbit and Communication</h5>
+                    <span style=font-size:13px>The Orbit/Comms subgroup is primarily responsible for evaluating and handling the communications systems on the Cubesat. The 1U CubeSat (TJREVERB) is predicated on testing the communications systems onboard. On this CubeSat, we will be testing three types of radios: one simplex UHF radio, one duplex UHF/VHF radio, and one duplex S-Band radio. The subgroup is responsible for pre-testing the radios as well.  
+
+                      </span>
+                  </div>
+
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>Software</h5>
+                    <span style=font-size:13px>The Software subgroup exists to assist all other subgroups with any software related tasks. Our responsibilities thusly include: creating a website to create awareness for TJREVERB, programming the flight computer of TJREVERB, performing TJREVERB outreach (programming focused or otherwise), and any other miscellaneous software-related tasks assigned to us by other groups. 
+                  </span>
+                  </div>
+
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>Outreach</h5>
+                    <span style=font-size:13px>The Outreach team is designed to bring the TJREVERB project to those outside of the team. It is part of NASA’s mission and our own. We will be performing documentation for the team, so that we have records of the decisions made and the reasoning behind them. The team’s primary goal is to organize a workshop for teams from local schools where they will build mock CubeSats and learn about our project.  
+                    </span>
+                  </div>
+                  
+
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>CAD</h5>
+                    <span style=font-size:13px>The CAD/Structural group will be focused more on creation of the 3U chassis (google “3U chassis cubesat” for more insight). For the 3U we will be using AutoDesk Fusion and OnShape create a computer aided design of the satellite. For this it is important to familiarize yourself with the basic commands and shortcuts of both Fusion and OnShape. As we are buying the frame for the 1U most work will start as soon as we receive the parts. 
+                      </span>
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>Testing</h5>
+                    <span style=font-size:13px>The purpose of the Thermal Control and Testing team is to ensure that the CubeSat survives in the environment of space. This includes ensuring that CubeSat internal components do not freeze or overheat due to the extreme cold and high heat fluxes in a Low Earth Orbit environment. Generally, the Thermal Control and Testing team requires information pertaining to the various electronic parts within the CubeSat, including their temperature tolerances and their respective efficiencies (to estimate heat output). Material specifics (thickness, type, etc.) are also necessary, for both vibration and thermal testing. To that end, the team will occasionally make contact with the other teams to determine these characteristics. While team members need not know how to conduct every type of testing, they should have some basic knowledge of mechanics and thermal physics. Knowledge of Autodesk Fusion 360 and MATLAB is also appreciated.
+
+                      </span>
+                  </div>
+
+                  <div class="section__text mdl-cell mdl-cell--1-offset mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <h5>Electronics</h5>
+                    <span style=font-size:13px>The electronics subgroup of the TJ REVERB cubesat team helps test and manage the power supply, solar panels, attitude control, and overall power distribution of the Cubesat. Many of the electrical components will be donated to TJ from commercial partners. As such, a majority of the focus on the team will be connecting components and making sure that the system works correctly in an integrated manner. This will be accomplished through the development of a Helmholtz coil for testing attitude control, the construction of a clean room, and other electrical tests. 
+
+                      </span>
+                  </div>
+                  <!--<ul class = "bigUL">
+                      
+                      <li><span style=font-size:16px>Orbit and Communication</span></li>
+                      <div style="padding-left:1em">Communications with the satellite will be established using the NEN (Near Earth Network). Redundant radio frequencies will maintain a continuous proof of connection with TJ REVERB.
+                      Through all available frequencies, data will be relayed to ground stations. Orbit of the spacecraft will be monitored and controlled through reaction wheels, a StarTracker and magnetorquers.
+                      </div>
+                      
+                      <li>Outreach</li>
+                      <div style="padding-left:1em">Through interaction with local middle and elementary schools, Outreach will create new STEM opportunities for the local community. In addition, tutorials on how to set up ground stations and connect with TJ REVERB will be made available. 
+                      </div>
+                      
+                      <li>Software</li>
+                      <div style="padding-left:1em">The CubeSat flight computer will be programmed to collect data for the communication comparison experiment for at least 180 days. Any additional data gathered will add to the validity of the dataset and be helpful in designing educational activities.
+                  To accomplish these goals, the committee will utilize Goddard's Core Flight System, Goddard's 42 Software, and GNU Radio
+                      </div>
+                      
+                      <li>Electronics</li>
+                      <div style="padding-left:1em">Power from the TJ REVERB's solar panels will be efficiently distributed to all components. Any power surplus will be stored by on board Li-Ion batteries.
+                      </div>
+                      
+                      <li>Proposal</li>
+                      <div style="padding-left:1em">Writing for all parts of applications and grants will accurately reflect the current and future state of TJ REVERB
+                      </div>
+                      
+                      <li>Structural Design</li>
+                      <div style="padding-left:1em">Physical stress and thermal analysis will be conducted through AutoDesk Fusion 360.
+                      </div>
+                      
+                    </ul>
+                  -->
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <div class="spacer40"></div>
+          <div class="spacer40"></div>
+        </div>
+        <!-- put faq back in when we need it>
+        <div class="mdl-layout__tab-panel" id="faq">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>FAQ</h4>
+                Here are some commonly asked questions that we hopefully can answer here.
+                <div class="section__text">
+                  <div class="mdl-card__actions mdl-card--border">
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                    </p>
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                    </p>
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                    </p>
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                    </p>
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                    </p>
+                    <h5>Question</h5>
+                    <p>
+                      Answer
+                      <h5>Question</h5>
+                      <p>
+                        Answer
+                      </p>
+                      <h5>Question</h5>
+                      <p>
+                        Answer
+                      </p>
+                      <h5>Question</h5>
+                      <p>
+                        Answer
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        -->
+        <div class="mdl-layout__tab-panel" id="aboutus">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col"><a href="http://www.ragnarokindustries.com/working/" target="_blank">Ragnarok </a> - Key Partner</h4>
+
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <!--<h5><a href="http://www.ragnarokindustries.com/working/" target="_blank">Ragnarok</a></h5>-->
+                  
+                  <div><img src="images\Ragnarok.jpg" style="width:360px;height:120px;margin:auto;display:block;"></div>
+                  <br>
+                  Ragnarok Industries brings a wealth of Cubesat building knowledge to the TJREVERB team. Primarily, Ragnarok aids TJREVERB by providing avionics, comprised of the flight computer and its interfaces with the various radios, sensors, and other components on board the satellite. In addition, Ragnarok has mentored the team with respect to the design of the satellite, and was represented at TJREVERB's Merit and Feasibility reviews.
+
+                </div>
+
+                
+              </div>
+            </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
-                </div>
+                <h4 class="mdl-cell mdl-cell--12-col"><a href="http://www.emergentspace.com/" target="_blank">Emergent</a> - Key Partner</h4>
+
+
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                  <!--<h5><a href="http://www.emergentspace.com/" target="_blank">Emergent</a></h5>-->
+                  <div><img src="images\Emergent.jpg" style="width:360px;height:120px;margin:auto;display:block;"></div>
+                  <br>
+                  Emergent Space Technologies has provided mentors and guidance to TJ’s CubeSat team. They trained two TJ students in a 5-week flight dynamics internship. Under the guidance of an experienced flight dynamics engineer, Dr. Sun Hur-Diaz, and other Emergent employees, they learned how to perform flight dynamics analysis for a 1U CubeSat using NASA’s General Mission Analysis Tool (GMAT). Skills the internship developed include determining ground track and tracking periods, developing orbit dynamics models, performing orbit determination simulations, and determining mission life time. One of the TJ students, Stephanie Chen, is the current Systems Engineer and Orbit and Communications Subsystem Lead for TJ’s CubeSat team. Dr. Sun Hur-Diaz has also provided her expertise and feedback for the TJREVERB’s merit review and feasibility review which were a part of TJ’s CubeSat Launch Initiative proposal to NASA.
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
           </section>
+          <!-- I replaced this section with the one above, better looing>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+                <h4>Key Partners</h4>
+                Led by Energy Systems Lab Director Adam Kemp, TJ3Sat was designed, constructed, and tested by more than 50 dedicated TJHSST students over the course of 7 years
+                <br>
+                <br>Orbital provided funding for the purchase of satellite hardware, engineering consultation, and hardware/software testing facilities.
+                <br>
+                <br>Stensat provided contributions to the design and construction of the radio and power handling hardware. Assisted with the schematic design and layout of the circuit boards.
               </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+            </div>
+          </section>-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+
+                <h4>TJHSST</h4>
+                <ul class="bigUL">
+                  <li>Thomas Jefferson High School for Science and Technology is a Northern Virginia public magnet high school. The official site of TJHSST can be found <a href="https://tjhsst.edu/" target="_blank">here</a>.</li>
+                  <li>In 2013, TJHSST became the first high school worldwide to succesfully launch a CubeSat into space, with the TJ3Sat project.</li>
+                  <li>3 years later in 2016, the work on TJ's next satellite officially begun with TJ REVERB.</li>
+                </ul>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
           </section>
-          <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--blue-grey-800 section__circle--big"></div>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Project Leaders</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Mike_Piccione.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Mike Piccione</h5>
+                  TJ REVERB's Principal Investigator and Energy Systems Lab Director
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle "><img src="images\Diana_Zaveli.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Diana Zaveli</h5>
+                  Project Coordinator - TJ '17
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Stephanie_Chen.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Stephanie Chen</h5>
+                  Systems Engineer - TJ '17
+                </div>
+
+                <h4 class="mdl-cell mdl-cell--12-col">Subsystem Leaders</h4>
+
+                <div class="spacer"></div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Shihao_Cao.jpg" style="width:60px;height:60px;" id="cao"></div>
+
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <div class="mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--3-col-desktop">
+                      <h5>Shihao Cao</h5>
+                      Website - TJ '19
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col-desktop" id="egg">
+                      <h5>All Contributors <span style=font-size:75%> - Click to Close</span></h5>
+                      Jude Bedessem • Shihao Cao • Maxwell Lord • Kevin Zou • Daniel Wu
+                    </div>
+                  </div>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Stephanie_Chen.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Stephanie Chen</h5>
+                  Orbit & Communciations - TJ '17
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Emma_Cuddy.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Emma Cuddy</h5>
+                  Outreach - TJ '17
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Michael_Krause.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Michael Krause</h5>
+                  Software - TJ '18
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Shrikant_Mishra.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Shrikant Mishra</h5>
+                  Electronics - TJ '17
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Suhas Sastry</h5>
+                  Testing & Verification - TJ '17
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="images\Adit_Shah.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Adit Shah</h5>
+                  Structural Design - TJ '17
+                </div>
+              </div>
             </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--blue-grey-800 section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
+
           </section>
+
+          <div class="spacer40"></div>
+          <div class="spacer40"></div>
         </div>
-        <div class="mdl-layout__tab-panel" id="features">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
 
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-              <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
-              </ul>
-
-              <p>
-                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
-              </p>
-              <p>
-                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
-              </p>
-              <p id="lorem2">
-                Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
-              </p>
-              <p>
-                Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
-              </p>
-              <p>
-                Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-              </p>
-
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-
-              <p id="lorem4">
-                Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-              </p>
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p>
-              <p>
-                Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
-              </p>
-              <p>
-                Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
-              </p>
+        <div class="mdl-layout__tab-panel" id="easter">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>All Contributors</h4>
+                Bob Stone John Doe Tony Smith
+              </div>
             </div>
           </section>
+          <div class="spacer40"></div>
+          <div class="spacer40"></div>
         </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
+
+
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">TJ REVERB</div>
           </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
+          <div class="mdl-mini-footer__right-section">
+            <div class="mdl-logo"><i><span id="quote">"I would like to die on Mars; just not on impact." - Elon Musk|
+            "I think of space not as the final frontier, but as the next frontier. Not as something to be conquered, but to be explored." - Neil deGrasse Tyson|
+            "The dream of yesterday is the hope of today and the reality of tomorrow." - Robert Goddard</span></i></div>
           </div>
         </footer>
       </main>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--blue-grey-700 mdl-color-text--accent-contrast">View Source</a>
+
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTop.js"></script>
+    <script type="text/javascript" src="js/jquery.easterEgg.js"></script>
+
   </body>
+
 </html>
