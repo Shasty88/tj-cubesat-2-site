@@ -23,6 +23,33 @@ body {
   background-size: cover;
 }
 
+.dropdown{
+}
+
+.dropbox{
+  display: none;
+  border-bottom-style: inset;
+  border-bottom-width: 1px;
+  border-bottom-color: #555;
+  
+}
+
+a:visited:not(.mdl-layout__tab) {
+  color: #448BC6;
+}
+
+a:hover:not(.mdl-layout__tab){
+	color: #44B1C6;
+}
+
+a:not(.mdl-layout__tab) {
+  color: #50D5EE;
+	text-decoration: none;
+}
+
+
+
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
