@@ -19,7 +19,7 @@ body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('images/ISS007-E-10807.JPG');
+  background-image: url('img/reverb/ISS007-E-10807.JPG');
   background-size: cover;
 }
 
@@ -348,11 +348,12 @@ a:not(.mdl-layout__tab) {
 }
 
 .centered_patch {
-  width: 400px;
-  height: 400px;
+  width: 272px;
+  height: 272px;
   display: block;
   margin: auto;
-  margin-bottom: 50px
+  margin-bottom: 50px;
+  opacity: 0.8; 
 }
 
 .bigUL li {
