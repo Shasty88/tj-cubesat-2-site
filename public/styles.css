@@ -23,7 +23,55 @@ body {
   background-size: cover;
 }
 
-.dropdown{
+div {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.date {
+  background-color: black;
+  font-style: italic;
+  color: white;
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 5px;
+  padding-right: 10px;
+  
+}
+
+.update{
+  background-color: white;
+  opacity: .7;
+  color: black;
+}
+
+
+
+.banner{
+  margin-left: -5vw;
+  max-width: 110%;
+  background-color: white; /*change color accordingly*/
+  
+}
+
+.banner img{
+  min-width: 110%;
+  max-width: 110%;
+}
+
+.banner h2{
+  position: absolute;
+  background-color: rgba(0,0,0, .7);
+  bottom: 10px;
+  left: 0.5em;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Oswald;
 }
 
 .dropbox{
