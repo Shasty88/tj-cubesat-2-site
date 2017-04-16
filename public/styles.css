@@ -54,22 +54,27 @@ div {
 
 .banner{
   margin-left: -5vw;
+  margin-right: -5vw;
   max-width: 110%;
+  min-height: 200px;
+  
+  overflow: auto;
   background-color: white; /*change color accordingly*/
   
 }
 
 .banner img{
   min-width: 110%;
-  max-width: 110%;
+  min-height: 100%;
 }
 
 .banner h2{
+  margin-left: -5vw;
   position: absolute;
   background-color: rgba(0,0,0, .7);
   bottom: 10px;
   left: 0.5em;
-  width: 100%;
+  width: 110%;
   align-items: center;
   text-align: center;
   color: white;
