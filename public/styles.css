@@ -58,7 +58,7 @@ div {
   max-width: 110%;
   min-height: 200px;
   
-  overflow: auto;
+  overflow: hidden;
   background-color: white; /*change color accordingly*/
   
 }
@@ -66,6 +66,7 @@ div {
 .banner img{
   min-width: 110%;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 .banner h2{
