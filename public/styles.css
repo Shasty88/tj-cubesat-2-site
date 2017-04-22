@@ -28,8 +28,18 @@ div {
   padding: 0;
 }
 
+.mdl-grid#pre-footer{
+  margin: 20px;
+  margin-top: 0px;
+}
 
+.mld-grid{
+  margin: 10px;
+}
 
+.mdl-grid#pre-footer h5{
+  font-size: 110%;
+}
 
 .date {
   background-color: white;
