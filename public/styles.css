@@ -413,11 +413,12 @@ a:not(.mdl-layout__tab) {
   opacity: 1;
 }
 
-.centered_patch {
-  width: 438px;
-  height: 438px;
+.centered_patch img{
+  max-width: 70%;
   display: block;
   margin: auto;
+}
+.centered_patch {
   margin-bottom: 50px;
   opacity: 0.8; 
 }
