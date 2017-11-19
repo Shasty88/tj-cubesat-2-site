@@ -58,8 +58,8 @@
 
 
 !function($){
-    var eggId = document.getElementById("miss");
-    eggId.ondblclick = function(){
+    var id = document.getElementById("miss");
+    id.ondblclick = function(){
         $("#felix").fadeIn("slow");
         
     };
