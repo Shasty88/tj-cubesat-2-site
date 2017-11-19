@@ -31,28 +31,46 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/simpletextrotator.css" type="text/css" />
     <link rel="icon" href="img/reverb/tjlogo.ico" type="image/x-icon"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/getData.js"></script>
+
 
   </head>
   
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl- ">
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700" onload="beepboop();">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
       <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top">
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="mdl-layout-title">TJ REVERB<br><span style="font-size: 75%;"><i> R<span style="font-size:60%">ESEARCH AND </span>E<span style="font-size:60%">DUCATION </span>V<span style="font-size:60%">EHICLE FOR THE </span>E<span style="font-size:60%">VALUATION OF </span>R<span style="font-size:60%">ADIO </span>B<span style="font-size:60%">ROADCASTS</i></span></span>
+          
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
           <a href="#mission_objectives" class="mdl-layout__tab">Mission Objectives</a>
           <a href="#sub" class="mdl-layout__tab">Subsystems</a>
           <a href="#aboutus" class="mdl-layout__tab">About Us</a>
-          <a href="#ba" class="mdl-layout__tab">Balloon</a>
+          <!--<a href="#ba" class="mdl-layout__tab">Balloon</a>-->
           <a href="#update-tab" class="mdl-layout__tab">Updates</a>
-          
-        </div>
+          <!--<div class="menu">
+            <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">more_vert</i>
+            </button> -->
+            
+          </div>
+        <!--</div> 
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-right">
+              <li class="mdl-menu__item">Introduction</li>
+              <li class="mdl-menu__item">Doc1</li>
+              <li class="mdl-menu__item">Doc2</li>
+              <li class="mdl-menu__item">Doc3</li>
+            </ul>-->
       </header>
+      
       <main class="mdl-layout__content">
+        
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <!--here's the mission patch-->
           <div class="centered_patch">
@@ -313,31 +331,60 @@
                   TJ REVERB's Principal Investigator and Energy Systems Lab Director
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle "><img src="img\reverb\Diana_Zaveli.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Thomas_Baron_Temp.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Diana Zaveli</h5>
-                  Project Coordinator - TJ '17
+                  <h5>Thomas Baron</h5>
+                  Project Manager - TJ '18
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Stephanie_Chen.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Liam_David.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Stephanie Chen</h5>
-                  Systems Engineer - TJ '17
+                  <h5>Liam David</h5>
+                  Systems Engineer - TJ '18
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="img\reverb\Michael_Krause.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Michael Krause</h5>
+                  Systems Engineer - TJ '18
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="img\reverb\Justin_Zhou2.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Justin Zhou</h5>
+                  Systems Engineer - TJ '18
                 </div>
 
                 <h4 class="mdl-cell mdl-cell--12-col">Subsystem Leaders</h4>
 
                 <div class="spacer"></div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Shihao_Cao.jpg" style="width:60px;height:60px;" id="cao"></div>
-
+                  <div class="section__circle-container__circle"><img src="img\reverb\Thomas_Baron_Temp.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Thomas Baron</h5>
+                  ADCS • Admin - TJ '18
+                </div>
+                
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="img\reverb\Madeleine_Beauvais.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Madeleine Beauvais</h5>
+                  Testing - TJ '18
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div id = "cao" class="section__circle-container__circle"><img src="img\reverb\Jude_Bedessem.png" style="width:60px;height:60px;"></div>
+                </div>               
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+
                   <div class="mdl-grid mdl-grid--no-spacing">
                     <div class="mdl-cell mdl-cell--3-col-desktop">
-                      <h5>Shihao Cao</h5>
+                      <h5>Jude Bedessem</h5>
                       Website - TJ '19
                     </div>
                     <div class="mdl-cell mdl-cell--6-col-desktop" id="egg">
@@ -345,20 +392,21 @@
                       Jude Bedessem • Shihao Cao • Maxwell Lord • Kevin Zou • Daniel Wu
                     </div>
                   </div>
-                </div>
+
+                  </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Stephanie_Chen.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Liam_David.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Stephanie Chen</h5>
-                  Orbit & Communciations - TJ '17
+                  <h5>Liam David</h5>
+                  Electronics - TJ '18
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Emma_Cuddy.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Andreea_Foarce.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Emma Cuddy</h5>
-                  Outreach - TJ '17
+                  <h5>Andreea Foarce</h5>
+                  Orbit & Communciations - TJ '18
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle"><img src="img\reverb\Michael_Krause.jpg" style="width:60px;height:60px;"></div>
@@ -368,26 +416,37 @@
                   Software - TJ '18
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Shrikant_Mishra.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Afreen_Mohideen.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Shrikant Mishra</h5>
-                  Electronics - TJ '17
+                  <h5>Afreen Mohideen</h5>
+                  Outreach - TJ '18
+                </div>
+                
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle"><img src="img\reverb\Avni_Singh.jpg" style="width:60px;height:60px;"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Avni Singh</h5>
+                  Testing - TJ '18
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--blue-grey-800"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Anonto_Zaman.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Suhas Sastry</h5>
-                  Testing & Verification - TJ '17
+                  <h5>Ananto Zaman</h5> 
+                  ADCS - TJ '18
                 </div>
+                
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="img\reverb\Adit_Shah.jpg" style="width:60px;height:60px;"></div>
+                  <div class="section__circle-container__circle"><img src="img\reverb\Justin_Zhou2.jpg" style="width:60px;height:60px;"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Adit Shah</h5>
-                  Structural Design - TJ '17
+                  <h5>Justin Zhou</h5>
+                  CAD - TJ '18
                 </div>
+                
+                
               </div>
             </div>
 
@@ -397,7 +456,7 @@
           <div class="spacer40"></div>
         </div>
 
-      <div class="mdl-layout__tab-panel" id="ba">
+      <!--<div class="mdl-layout__tab-panel" id="ba">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
@@ -409,7 +468,7 @@
                 
                 <!--<br><br>
                 Besides data, one issue brought to our attention was that the balloon cutoff was not triggered. [Possible explanations for why it happened] We hope to learn from this and fix the issue for our next balloon launch!
-                --></p>
+                --> <!--</p>
                 <div class="section__text">
               </div>
             </div>
@@ -449,9 +508,8 @@
                 </div>
                 <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-              </div>
+              <!--</div>
               <br>
-              
               <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
@@ -468,58 +526,116 @@
         
       <div class="mdl-layout__tab-panel is-active" id="overview">    
       </div>
+      -->
       <div class="mdl-layout__tab-panel" id="update-tab">
-         
+        
+        
+        <!-- visual tests of embedded fb posts 
+              will implement automatically updating posts soon -->
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="update mdl-cell mdl-cell--12-col">
-                <div class="date">
-                  <b><i>June 22, 2017</i></b>              </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  We have successfully conducted a weather balloon test! Keep an eye out for a 360 video of the test!
-                </div>
-            </div>
-          </section>
-          
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="update mdl-cell mdl-cell--12-col">
-                <div class="date">
-                  <b><i>April 7, 2017 </i></b>
+              <div class="fb-box">
+                <div class="fb-post" id="update1" data-href="" data-width="auto" data-show-text="true">
+                </div>               
               </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  Come to TJ's Davinci commons on April 22nd (Saturday) from 3:30 PM to 5:30 PM for TJ REVERB's kick off event! We'll be presenting on our mission, and how you can follow us on our journey. And yes, there will be food. Can't wait to see you there! Click <a href = "CubeSat_Invitation_final.pdf">here</a> to see our flyer.
-                </div>
             </div>
           </section>
           
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="update mdl-cell mdl-cell--12-col">
-                <div class="date">
-                  <b><i>April 7, 2017</i></b>
+              <div class = "fb-box">
+                <div class="fb-post" id="update2" data-href="" data-width="auto" data-show-text="true">
+                </div>             
               </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  We were just featured in the TJ Partnership Fund. Check it out here: <a href="http://tjpartnershipfund.org/2017/02/new-tj-cubesat-on-nasa-launch-schedule/">http://tjpartnershipfund.org/2017/02/new-tj-cubesat-on-nasa-launch-schedule</a>
-                </div>
             </div>
           </section>
           
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="update mdl-cell mdl-cell--12-col">
-                <div class="date">
-                  <b><i>April 7, 2017</i></b>              </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  We are currently working on an untethered balloon that will ascend to 80,000ft - 120,000ft. It will take pictures and will test critical components of the Cubesat.
-                </div>
-            </div>
-          </section>
-          
-          
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="update mdl-cell mdl-cell--12-col">
-                <div class="date">
-                  <b><i>April 7, 2017</i></b>
+              <div class = "fb-box">
+                <div class="fb-post" id="update3" data-href="" data-width="auto" data-show-text="true">
+                </div>             
               </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                    The website is now up and running! Updates will appear here periodically, so you can keep yourself informed on our progress!
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update4" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update5" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update6" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update7" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update8" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update9" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update10" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update11" data-href="" data-width="auto" data-show-text="true">
+                </div>             
+              </div>
+            </div>
+          </section>
+          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="update mdl-cell mdl-cell--12-col">
+              <div class = "fb-box">
+                <div class="fb-post" id="update12" data-href="" data-width="auto" data-show-text="true">
+                </div>             
               </div>
             </div>
           </section>
@@ -544,7 +660,6 @@
     </div>
 
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTop.js"></script>

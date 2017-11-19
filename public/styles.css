@@ -28,6 +28,18 @@ div {
   padding: 0;
 }
 
+.fb-box{
+  overflow: hidden;
+
+}
+
+.menu{
+  margin-right: 0px; 
+  margin-left: auto;
+  
+}
+
+
 .mdl-grid#pre-footer{
   margin: 20px;
   margin-top: 0px;
