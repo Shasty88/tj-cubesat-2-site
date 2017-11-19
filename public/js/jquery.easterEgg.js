@@ -9,3 +9,63 @@
     });
 
 }(window.jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!function($){
+    var eggId = document.getElementById("miss");
+    eggId.ondblclick = function(){
+        $("#felix").fadeIn("slow");
+        
+    };
+    $("#felix").click(function() {
+        $("#felix").fadeOut("slow");
+    });
+
+}(window.jQuery);
+

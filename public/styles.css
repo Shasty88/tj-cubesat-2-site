@@ -135,6 +135,9 @@ a:not(.mdl-layout__tab) {
 #egg {
   display: none;
 }
+#felix{
+  display: none;
+}
 
 .section__text.antefooter {
   color: #111;
